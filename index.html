@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Getting Giphy With It | Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+</head>
+<body>
+    <header class="heading fixed-top">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <img src="assets/images/giphy_logo.png" class="img-fluid logo">
+            </div>
+            <div class="col-md-6">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hobbies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row align-items-center">
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" placeholder="Search" id="search-term">
+                        <label for="search" class="sr-only" id="search-term">Search</label>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-primary btn-block" id="go-search">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <hr>
+        <div class="row additionalUI">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <button type="more" class="btn btn-primary btn-block">Show More</button>
+            </div>
+            <div class="col-md-4">
+                <button type="clear" class="btn btn-primary btn-block">Clear Gifs</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12" id="giphy-div"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footing fixed-bottom align-items-center">
+            <div class="row">
+                <div class="col-md-12">
+                    Content provided by © Giphy.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

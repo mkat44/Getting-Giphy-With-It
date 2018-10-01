@@ -1,0 +1,53 @@
+body {
+    background-image: URL(../images/black_lozenge.png);
+}
+
+.heading {
+    width: 100%;
+    height: 8%;
+    margin: 0%;
+    padding: 2% 2% 1% 2%;
+    background-color: #800000;
+    border-style: hidden hidden solid hidden;
+    border-width: 1%;
+    border-color: #dddddd;
+}
+
+.logo {
+    max-height: 35%;
+}
+
+.nav-link {
+    color: #dddddd;
+}
+
+.nav-link:hover {
+    color: #777777;
+}
+
+.active {
+    color: #dddddd;
+    background-color: #333333;
+}
+
+.main {
+    width: 60%;
+    height: 100%;
+    margin: 4% auto;
+    padding: 3%;
+    background-color: #dddddd;
+    position: relative;
+}
+
+.footing {
+    width: 100%;
+    height: 5%;
+    margin: 0% 0%;
+    padding: 1%;
+    text-align: center;
+    background-color: #800000;
+    color: #dddddd;
+    border-style: solid hidden hidden hidden;
+    border-width: 1%;
+    border-color: #dddddd;
+}
