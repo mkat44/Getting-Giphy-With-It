@@ -1,8 +1,40 @@
 $(document).ready(function() {
 
     // global variables
+    topics = ["frog", "panther", "fox", "snow leopard", "opossum", "raccoon", "dog", "tiger", "toucan", "narwhal", "hamster", "cat", "squirrel", "bear", "giraffe", "spider"];
     limit = 10;
     var searchTerm = "";
+
+    renderButtons();
+
+    // put buttons on the DOM
+    function renderButtons() {
+    $(".topic-buttons").empty();
+
+    for (var i = 0; i < topics.length; i++) {
+          var buttonDIV = $("<div>");
+          buttonDIV.addClass("col-md-2");
+          var button = $("<button>");
+          button.addClass("topic");
+          button.addClass("btn");
+          button.addClass("btn-primary");
+          button.addClass("btn-block");
+          button.attr("value", topics[i]);
+          button.text(topics[i]);
+          $(buttonDIV).append(button);
+          $(".topic-buttons").append(buttonDIV);
+        }
+      }
+
+    // click on buttons
+    $(".topic").on("click", function(event) {
+        event.preventDefault();
+        $(".giphy-div").empty();
+        limit = 10;
+        searchTerm = $(this).attr("value").trim();
+        console.log(searchTerm);
+        searchGIFS(searchTerm);
+    })
 
     // click on search
     $("#go-search").on("click", function(event) {
@@ -10,7 +42,8 @@ $(document).ready(function() {
         $(".giphy-div").empty();
         limit = 10;
         searchTerm = $("#search-term").val().trim();
-        // topics.push(search);
+        topics.push(searchTerm);
+        renderButtons();
         console.log(searchTerm);
         searchGIFS(searchTerm);
     });
