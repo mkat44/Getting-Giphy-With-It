@@ -10,7 +10,7 @@ Deployed at: https://mkat44.github.io/Getting-Giphy-With-It/
 On the landing page users can search for any keyword they wish and have gifs load from the Giphy API. The webpage will also remember what has been searched for and create buttons that the user can click on in the future to see the gifs again. On the other pages, users can find preselected fields they can click on to query gifs of specific keywords, or choose to search for one of their own which will also add it to the list. 
 
 # Organization
-Because this isn't a single-page application, everything is separated into its own HTML page which link to one another. Each webpage pulls in the same Javascript page which runs based on which page has called it thanks to jQuery.
+Because this isn't a single-page application, everything is separated into its own HTML page which link to one another. Each webpage also has its own Javascript file.
 
 # Future Goals
 Better styling and perhaps deploying the site in the future with a backend. 
